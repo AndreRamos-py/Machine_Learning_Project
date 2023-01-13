@@ -6,12 +6,12 @@ import seaborn as sns
 
 
 
-tabela = pd.read_csv(r"C:\Users\andre\OneDrive\Documentos\Intensivão Python\advertising.csv")
+table = pd.read_csv(r"C:\Users\andre\OneDrive\Documentos\Intensivão Python\advertising.csv")
 
 # To make the correlation
-print(tabela.corr())
+print(table.corr())
 
 # Display the chart
 
-sns.heatmap(tabela.corr())
+sns.heatmap(table.corr())
 plt.show()

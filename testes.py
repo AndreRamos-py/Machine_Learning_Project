@@ -13,5 +13,5 @@ print(table.corr())
 
 # Display the chart
 
-sns.heatmap(table.corr())
+sns.heatmap(table.corr(), cmap='Greens', annot=True)
 plt.show()

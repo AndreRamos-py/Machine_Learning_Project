@@ -41,3 +41,13 @@ from sklearn.metrics import r2_score
 
 print(r2_score(y_test, linear_regression_prediction))
 print(r2_score(y_test, decision_tree_prediction))
+
+# Graphic Visualization of Predictions
+
+auxiliary_table = pd.DataFrame()
+auxiliary_table['y_test'] = y_test
+auxiliary_table['Decision Tree Prediction'] = decision_tree_prediction
+auxiliary_table['Linear Regression Prediction'] = linear_regression_prediction
+
+sns.lineplot(data=auxiliary_table)
+plt.show()

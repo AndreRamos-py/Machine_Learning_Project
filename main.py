@@ -51,3 +51,11 @@ auxiliary_table['Linear Regression Prediction'] = linear_regression_prediction
 
 sns.lineplot(data=auxiliary_table)
 plt.show()
+
+# New Predict
+
+new_predict = table = pd.read_csv(r"C:\Users\andre\OneDrive\Documentos\Intensivão Python\novos.csv")
+print(new_predict)
+
+predict_n = decision_tree_model.predict(new_predict)
+print(predict_n)

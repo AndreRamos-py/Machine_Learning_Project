@@ -19,7 +19,7 @@ x = table [['TV', 'Radio', 'Jornal']]
 
 from sklearn.model_selection import train_test_split
 
-x_training, x_test, y_training, x_test = train_test_split(x, y)
+x_training, x_test, y_training, x_test = train_test_split(x, y, test_size=0.3)
 
 # Import the artificial intelligence
 from sklearn.linear_model import LinearRegression
